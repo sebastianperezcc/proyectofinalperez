@@ -10,11 +10,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
+            <a class="logo" href="./index.html">
+                <img src="./images/Logo.png" alt="Logo CPS">
+            </a>
             <div class="container">
                 <div class="dropdown">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -25,22 +32,22 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">INICIO</a>
+                                <a class="nav-link" href="index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/torneos.html">TORNEOS</a>
+                                <a class="nav-link" href="./pages/torneos.html">Torneos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/ranking.html">RANKING</a>
+                                <a class="nav-link" href="./pages/ranking.html">Ranking</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/calendario.html">CALENDARIO</a>
+                                <a class="nav-link" href="./pages/calendario.html">Calendario</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/galeria.html">GALERIA</a>
+                                <a class="nav-link" href="./pages/galeria.html">Galeria</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -66,41 +73,16 @@
         </div>
     </div>
 
-    <script>
-        let currentSlide = 1;
-        const totalSlides = 4;
-        let autoChangeInterval;
-
-        function changeSlide(slideNumber) {
-            currentSlide = slideNumber;
-            const slider = document.querySelector(".slider");
-            const slideWidth = slider.offsetWidth;
-            slider.scrollTo({ left: (slideNumber - 1) * slideWidth, behavior: "smooth" });
-            clearInterval(autoChangeInterval);
-            autoChangeInterval = setInterval(autoChangeSlide, 5000);
-        }
-
-        function autoChangeSlide() {
-            currentSlide = (currentSlide % totalSlides) + 1;
-            changeSlide(currentSlide);
-        }
-
-        autoChangeInterval = setInterval(autoChangeSlide, 5000);
-
-        window.addEventListener("resize", function () {
-            changeSlide(currentSlide);
-        });
-    </script>
 
 
     <main>
         <div class="mainindex mx-auto text-center col-md-8">
-        <h1>Circuito Padel Sur</h1>
-        <p>El Circuito Padel Sur (CPS) es una emocionante iniciativa
-            que vio la luz en el año 2022. Somos un equipo joven y apasionado, impulsado
-            por una profunda pasión por el pádel y un compromiso inquebrantable con el
-            desarrollo de este deporte. En CPS, no solo pensamos en los torneos y la competencia,
-            sino que ponemos a los jugadores en el centro de todo lo que hacemos.</p>
+            <h1>Circuito Padel Sur</h1>
+            <p>El Circuito Padel Sur (CPS) es una emocionante iniciativa
+                que vio la luz en el año 2022. Somos un equipo joven y apasionado, impulsado
+                por una profunda pasión por el pádel y un compromiso inquebrantable con el
+                desarrollo de este deporte. En CPS, no solo pensamos en los torneos y la competencia,
+                sino que ponemos a los jugadores en el centro de todo lo que hacemos.</p>
         </div>
     </main>
 
@@ -132,7 +114,8 @@
         </div>
         <div class="card">
             <figure>
-                <img src="./images/cardgaleria.png" alt="Galeria de fotos de los jugadores, la organizacion y los clubes">
+                <img src="./images/cardgaleria.png"
+                    alt="Galeria de fotos de los jugadores, la organizacion y los clubes">
             </figure>
             <h3>Galeria</h3>
             <p>Revivi los mejores momentos de nuestros torneos.</p>
@@ -140,49 +123,54 @@
         </div>
     </div>
 
-
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Nuestra Historia</h2>
-                <p>Nacimos con la idea de crear un espacio donde los amantes del pádel pudieran competir,
-                    aprender y crecer juntos. Creemos en la importancia de fomentar un ambiente de juego amigable
-                    y competitivo que permita a los jugadores de todos los niveles mejorar sus habilidades y
-                    disfrutar al máximo de cada encuentro en la cancha.</p>
-            </div>
-            <div class="col-md-6">
-                <h2>Comprometidos con los Jugadores</h2>
-                <p>En CPS, nuestros valores se reflejan en cada aspecto de lo que hacemos. Estamos comprometidos
-                    en brindar una experiencia excepcional a todos los jugadores, independientemente de su nivel
-                    de habilidad. Entendemos que el pádel es más que un deporte; es una comunidad, una oportunidad
-                    de hacer nuevos amigos y de superarse a sí mismo.</p>
+    <div class="texto">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="texto1 col-md-6">
+                    <h2>Nuestra Historia</h2>
+                    <p>Nacimos con la idea de crear un espacio donde los amantes del pádel pudieran competir,
+                        aprender y crecer juntos. Creemos en la importancia de fomentar un ambiente de juego amigable
+                        y competitivo que permita a los jugadores de todos los niveles mejorar sus habilidades y
+                        disfrutar al máximo de cada encuentro en la cancha.</p>
+                        <img src="./images/cpshistoria.jpg" alt="Foto de CPS">
+                </div>
+                <div class="texto2 col-md-6">
+                    <h2>Nuestros Objetivos</h2>
+                    <p>Nuestro equipo está impulsado por la idea de hacer que el pádel sea accesible para todos y
+                        de promover los valores de la deportividad y la camaradería. Trabajamos arduamente para
+                        organizar torneos emocionantes, mantener un calendario de eventos actualizado y brindar a los
+                        jugadores la oportunidad de competir en un entorno positivo y desafiante.</p>
+                        <img src="./images/cpsobjetivos.jpg" alt="Foto de CPS">
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Nuestros Objetivos</h2>
-                <p>Nuestro equipo está impulsado por la idea de hacer que el pádel sea accesible para todos y
-                    de promover los valores de la deportividad y la camaradería. Trabajamos arduamente para organizar
-                    torneos emocionantes, mantener un calendario de eventos actualizado y brindar a los jugadores la
-                    oportunidad de competir en un entorno positivo y desafiante.</p>
-            </div>
-            <div class="col-md-6">
-                <h2>Unite a CPS</h2>
-                <p>Estamos emocionados por lo que el futuro nos depara y esperamos tener la oportunidad de
-                    conocerte en uno de nuestros eventos. Ya seas un jugador experimentado o estés comenzando
-                    en el mundo del pádel, te damos la bienvenida a ser parte de la familia CPS. Únete a nosotros y
-                    descubre por qué somos más que un circuito de pádel; somos una comunidad apasionada que se esfuerza
-                    por crecer y mejorar juntos.</p>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="texto3 col-md-6">
+                    <h2>Comprometidos con los Jugadores</h2>
+                    <p>En CPS, nuestros valores se reflejan en cada aspecto de lo que hacemos. Estamos comprometidos
+                        en brindar una experiencia excepcional a todos los jugadores, independientemente de su nivel
+                        de habilidad. Entendemos que el pádel es más que un deporte; es una comunidad, una oportunidad
+                        de hacer nuevos amigos y de superarse a sí mismo.</p>
+                        <img src="./images/cpsjugadores.jpg" alt="Foto de CPS">
+                </div>
+                <div class="texto4 col-md-6">
+                    <h2>Unite a CPS</h2>
+                    <p>Esperamos tener la oportunidad de
+                        conocerte en uno de nuestros eventos. Ya seas un jugador experimentado o estés comenzando
+                        en el mundo del pádel, te damos la bienvenida a ser parte de la familia CPS. Únete a nosotros y
+                        descubre por qué somos más que un circuito de pádel; somos una comunidad apasionada que se
+                        esfuerza por crecer y mejorar juntos.</p>
+                        <img src="./images/cpsunite.jpg" alt="Foto de CPS">
+                </div>
             </div>
         </div>
     </div>
 
     <footer class="py-3">
         <div class="container text-center">
-            <p>Circuito Padel SUR se reserva todos los derechos.</p>
+            <p>Circuito Padel Sur se reserva todos los derechos.</p>
         </div>
     </footer>
 

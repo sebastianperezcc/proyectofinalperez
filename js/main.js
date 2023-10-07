@@ -1,12 +1,23 @@
-/* const slider = document.getElementById("slider");
-const images = slider.querySelectorAll("img");
-const imageCount = images.length;
-let currentIndex = 0;
+let currentSlide = 1;
+const totalSlides = 4;
+let autoChangeInterval;
 
-function changeImage() {
-    currentIndex = (currentIndex + 1) % imageCount;
-    const translateX = -currentIndex * 100; // Ancho de la imagen
-    slider.style.transform = `translateX(${translateX}%)`;
+function changeSlide(slideNumber) {
+    currentSlide = slideNumber;
+    const slider = document.querySelector(".slider");
+    const slideWidth = slider.offsetWidth;
+    slider.scrollTo({ left: (slideNumber - 1) * slideWidth, behavior: "smooth" });
+    clearInterval(autoChangeInterval);
+    autoChangeInterval = setInterval(autoChangeSlide, 5000);
 }
 
-setInterval(changeImage, 5000); // Cambia de imagen cada 5 segundos (5000 ms)
+function autoChangeSlide() {
+    currentSlide = (currentSlide % totalSlides) + 1;
+    changeSlide(currentSlide);
+}
+
+autoChangeInterval = setInterval(autoChangeSlide, 5000);
+
+window.addEventListener("resize", function () {
+    changeSlide(currentSlide);
+});

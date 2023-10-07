@@ -10,11 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
+            <a class="logo" href="../index.html">
+                <img src="../images/Logo.png" alt="Logo CPS">
+            </a>
             <div class="container">
                 <div class="dropdown">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -25,22 +29,22 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="../index.html">INICIO</a>
+                                <a class="nav-link" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pages/torneos.html">TORNEOS</a>
+                                <a class="nav-link" href="../pages/torneos.html">Torneos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pages/ranking.html">RANKING</a>
+                                <a class="nav-link" href="../pages/ranking.html">Ranking</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pages/calendario.html">CALENDARIO</a>
+                                <a class="nav-link" href="../pages/calendario.html">Calendario</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pages/galeria.html">GALERIA</a>
+                                <a class="nav-link" href="../pages/galeria.html">Galeria</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -51,13 +55,38 @@
 
 
 
-    <body>
-        <main>
-            <div class="mainconstruccion" >
-                <h2>En construccion.</h2>
-            </div>
+
+        <main class="maincontacto">
+            <section class="contacto">
+                <h1>Contacto</h1>
+                <p>¡Contáctanos para obtener más información!</p>
+    
+                <form action="tu_script_de_procesamiento.php" method="post">
+                    <div class="form-group">
+                        <label for="nombre_apellido">Nombre y Apellido:</label>
+                        <input type="text" id="nombre_apellido" name="nombre_apellido" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="celular">Celular:</label>
+                        <input type="tel" id="celular" name="celular">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+    
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
         </main>
-    </body>
+
 
 
 

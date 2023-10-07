@@ -10,11 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
+            <a class="logo" href="../index.html">
+                <img src="../images/Logo.png" alt="Logo CPS">
+            </a>
             <div class="container">
                 <div class="dropdown">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -25,22 +29,22 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="../index.html">INICIO</a>
+                                <a class="nav-link" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pages/torneos.html">TORNEOS</a>
+                                <a class="nav-link" href="../pages/torneos.html">Torneos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pages/ranking.html">RANKING</a>
+                                <a class="nav-link" href="../pages/ranking.html">Ranking</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pages/calendario.html">CALENDARIO</a>
+                                <a class="nav-link" href="../pages/calendario.html">Calendario</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pages/galeria.html">GALERIA</a>
+                                <a class="nav-link" href="../pages/galeria.html">Galeria</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -53,14 +57,55 @@
 
 
 
+    <main>
+        <section class="torneos">
+            <h1>Torneos</h1>
 
-    <body>
-        <main>
-            <div class="mainconstruccion" >
-                <h2>En construccion.</h2>
+            <div class="torneos-libres">
+                <h2 class="h2torneos">Libres</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tarjeta-torneo">
+                            <img src="../images/libresetapa1.jpg" alt="Libres Etapa 1">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="tarjeta-torneo">
+                            <img src="../images/libresetapa2.jpg" alt="Libres Etapa 2">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tarjeta-torneo">
+                            <img src="../images/libresetapa3.jpg" alt="Libres Etapa 3">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </main>
-    </body>
+
+
+            <div class="torneos-veteranos">
+                <h2 class="h2torneos">Veteranos</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tarjeta-torneo">
+                            <img src="../images/veteranosetapa1.jpg" alt="Veteranos Etapa 1">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="tarjeta-torneo">
+                            <img src="../images/veteranosetapa2.jpg" alt="Veteranos Etapa 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
 
 
 
@@ -71,7 +116,9 @@
 
 
 
-    <footer class="py-3 fixed-bottom">
+
+
+    <footer class="py-3">
         <div class="container text-center">
             <p>Circuito Padel SUR se reserva todos los derechos.</p>
         </div>
