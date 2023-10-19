@@ -60,13 +60,9 @@
     <main>
         <section class="ranking">
             <h1>Ranking</h1>
-            <p id="aclaracion">Funcionalidad en construccion, voy a necesitar un archivo JSON para cargar una base de datos de jugadores
-                y todavia no llegue a esa parte en el curso de Javascript. La idea seria utilizar los filtros para ver
-                los rankings de cada categoria y de cada tipo de torneo.
-            </p>
-            <div class="filtro-rankings">
-                <label for="tipo-ranking">Ver Ranking de:</label>
-                <select id="tipo-ranking">
+            <div class="filtro-torneos">
+                <label for="tipo-torneo">Ver Ranking de:</label>
+                <select id="tipo-torneo">
                     <option value="libres-caballeros">Libres - Caballeros</option>
                     <option value="libres-damas">Libres - Damas</option>
                     <option value="veteranos">Veteranos</option>
@@ -82,7 +78,7 @@
                 <label><input type="radio" name="categoria" value="6ta"> 6ta</label>
                 <label><input type="radio" name="categoria" value="7ma"> 7ma</label>
             </div>
-            <table>
+            <table id="ranking-table">
                 <thead>
                     <tr>
                         <th>Posición</th>
@@ -93,48 +89,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Datos de los jugadores -->
-                    <tr>
-                        <td>1</td>
-                        <td>Jugador 1</td>
-                        <td>5ta</td>
-                        <td>10</td>
-                        <td>250</td>
-                    </tr>
-                    <!-- Datos aleatorios para los jugadores 2 al 5 -->
-                    <tr>
-                        <td>2</td>
-                        <td>Jugador 2</td>
-                        <td>4ta</td>
-                        <td>8</td>
-                        <td>220</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Jugador 3</td>
-                        <td>3ra</td>
-                        <td>9</td>
-                        <td>190</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Jugador 4</td>
-                        <td>6ta</td>
-                        <td>7</td>
-                        <td>180</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Jugador 5</td>
-                        <td>2da</td>
-                        <td>6</td>
-                        <td>160</td>
-                    </tr>
                 </tbody>
             </table>
+            <div id="mensaje-no-registros" style="display: none;">
+                Esta categoria por el momento no posee ranking, no fue realizada.
+            </div>
+            <div id="mensaje-faltacategoria" style="display: none;">
+                Falta seleccionar la categoria para poder visualizar el ranking.
+            </div>
         </section>
     </main>
-    
+
 
 
 
@@ -150,6 +115,7 @@
         </div>
     </footer>
 
+    <script src="../js/ranking.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">

@@ -1,0 +1,149 @@
+[
+    {
+        "nombre": "Juan González",
+        "categoria": "2da",
+        "torneosJugados": 5,
+        "puntosTotales": 150,
+        "tipoTorneo": "libres-caballeros"
+    },
+    {
+        "nombre": "Carlos Rodríguez",
+        "categoria": "2da",
+        "torneosJugados": 6,
+        "puntosTotales": 170,
+        "tipoTorneo": "libres-caballeros"
+    },
+    {
+        "nombre": "Maria López",
+        "categoria": "2da",
+        "torneosJugados": 7,
+        "puntosTotales": 190,
+        "tipoTorneo": "libres-damas"
+    },
+    {
+        "nombre": "Luis Martínez",
+        "categoria": "3ra",
+        "torneosJugados": 4,
+        "puntosTotales": 130,
+        "tipoTorneo": "veteranos"
+    },
+    {
+        "nombre": "Andrea Pérez",
+        "categoria": "3ra",
+        "torneosJugados": 5,
+        "puntosTotales": 150,
+        "tipoTorneo": "ladies"
+    },
+    {
+        "nombre": "Sofía Fernández",
+        "categoria": "3ra",
+        "torneosJugados": 6,
+        "puntosTotales": 170,
+        "tipoTorneo": "libres-damas"
+    },
+    {
+        "nombre": "José Martínez",
+        "categoria": "3ra",
+        "torneosJugados": 3,
+        "puntosTotales": 120,
+        "tipoTorneo": "veteranos"
+    },
+    {
+        "nombre": "Ana Sánchez",
+        "categoria": "4ta",
+        "torneosJugados": 5,
+        "puntosTotales": 140,
+        "tipoTorneo": "libres-damas"
+    },
+    {
+        "nombre": "Pedro Gómez",
+        "categoria": "4ta",
+        "torneosJugados": 6,
+        "puntosTotales": 160,
+        "tipoTorneo": "libres-caballeros"
+    },
+    {
+        "nombre": "Laura Pérez",
+        "categoria": "5ta",
+        "torneosJugados": 5,
+        "puntosTotales": 110,
+        "tipoTorneo": "libres-damas"
+    },
+    {
+        "nombre": "Sebastian González",
+        "categoria": "5ta",
+        "torneosJugados": 4,
+        "puntosTotales": 130,
+        "tipoTorneo": "libres-caballeros"
+    },
+    {
+        "nombre": "Francisco Rodríguez",
+        "categoria": "5ta",
+        "torneosJugados": 6,
+        "puntosTotales": 150,
+        "tipoTorneo": "veteranos"
+    },
+    {
+        "nombre": "Benjamin López",
+        "categoria": "6ta",
+        "torneosJugados": 2,
+        "puntosTotales": 90,
+        "tipoTorneo": "libres-caballeros"
+    },
+    {
+        "nombre": "Tobias Pérez",
+        "categoria": "6ta",
+        "torneosJugados": 5,
+        "puntosTotales": 110,
+        "tipoTorneo": "libres-caballeros"
+    },
+    {
+        "nombre": "Juan Ignacio Gómez",
+        "categoria": "7ma",
+        "torneosJugados": 4,
+        "puntosTotales": 80,
+        "tipoTorneo": "veteranos"
+    },
+    {
+        "nombre": "Federico Díaz",
+        "categoria": "7ma",
+        "torneosJugados": 3,
+        "puntosTotales": 100,
+        "tipoTorneo": "libres-caballeros"
+    },
+    {
+        "nombre": "Nicolas Hernández",
+        "categoria": "7ma",
+        "torneosJugados": 5,
+        "puntosTotales": 120,
+        "tipoTorneo": "libres-caballeros"
+    },
+    {
+        "nombre": "Gaston Sánchez",
+        "categoria": "7ma",
+        "torneosJugados": 4,
+        "puntosTotales": 80,
+        "tipoTorneo": "libres-caballeros"
+    },
+    {
+        "nombre": "Maria Martínez",
+        "categoria": "7ma",
+        "torneosJugados": 5,
+        "puntosTotales": 100,
+        "tipoTorneo": "ladies"
+    },
+    {
+        "nombre": "Andrea Rodríguez",
+        "categoria": "7ma",
+        "torneosJugados": 6,
+        "puntosTotales": 120,
+        "tipoTorneo": "ladies"
+    },
+    {
+        "nombre": "Carlos López",
+        "categoria": "7ma",
+        "torneosJugados": 3,
+        "puntosTotales": 80,
+        "tipoTorneo": "veteranos"
+    }
+]
