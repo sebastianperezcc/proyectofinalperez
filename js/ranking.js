@@ -12,7 +12,6 @@ table.style.display = 'none';
 mensajeNoRegistros.style.display = 'none';
 mensajeFaltaCategoria.style.display = 'none';
 
-
 const mostrarMensajes = () => {
     const tipoTorneoSeleccionado = selectTipoTorneo.value;
     const categoriaSeleccionada = document.querySelector('input[type="radio"][name="categoria"]:checked')?.value || 'todos';
